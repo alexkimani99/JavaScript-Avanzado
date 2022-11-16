@@ -19,10 +19,10 @@
             <div class="mensaje">
                 <h2>¡Bienvenido!</h2>
                 <p>Si ya tienes una cuenta, inicia sesión aquí</p>
-                <button class="registro-btn">Iniciar Sesión</button>
+                <button class="iniciarSesion-btn">Iniciar Sesión</button>
             </div>
         </div>
-        <form class="formulario">
+        <form class="formulario" onsubmit="signUp()">
             <h2 class="crearCuenta">Crear una cuenta</h2>
             <div class="iconos">
                 <div class="bordeIconos">
@@ -35,9 +35,11 @@
                     <i class='bx bxl-facebook-circle'></i>
                 </div>
             </div>
-            <p class="cuenta">Crear una cuenta gratis</p>
+            <p class="cuenta">Crea tu cuenta en un solo paso</p>
             <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellidos">
             <input type="email" placeholder="Email">
+            <input type="text" placeholder="Nombre de usuario">
             <input type="password" placeholder="Contraseña">
             <input type="button" value="Registrarse">
         </form>
@@ -57,15 +59,16 @@
                 </div>
             </div>
             <p class="cuenta">Introduzca sus datos</p>
-            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Nombre de usuario">
             <input type="password" placeholder="Contraseña">
             <input type="button" value="Iniciar Sesion">
+            <span id="mensajeError"></span>
         </form>
         <div class="bienvenido">
             <div class="mensaje">
                 <h2>¿No tienes cuenta?</h2>
                 <p>Por favor, regístrese aquí</p>
-                <button class="iniciarSesion-btn">Registrarse</button>
+                <button class="registro-btn">Registrarse</button>
             </div>
         </div>
     </div>
